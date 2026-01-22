@@ -21,6 +21,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
 <link rel="stylesheet" href="css/flaticon.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
 <!--== font -->
@@ -65,33 +66,33 @@
 
 <header id="site-header" class="header">
   <div class="header-top">
-      <div class="container">
+    <div class="container">
       <div class="row">
         <div class="col d-flex align-items-center justify-content-end">
           <div class="topbar-link">            
             <ul class="list-inline">
-              <li><i class="flaticon-alarm-clock"></i>
+              <li><i class="fa-regular fa-clock"></i>
                 <span>Monday - Friday 08:00 to 18:00</span>
-                </li>
-              <li><i class="flaticon-phone-call"></i>
+              </li>
+              <li><i class="fa-solid fa-phone"></i>
                 <a href="tel:+2349050975253">+234 905 097 5253</a>
               </li>
-              <li><i class="flaticon-message"></i>
+              <li><i class="fa-regular fa-envelope"></i>
                 <a href="mailto:info@billhitler.com">info@billhitler.com</a>
               </li>
             </ul>
           </div>
           <div class="social-icons">
-              <ul class="list-inline">
-                <li><a href="#"><i class="lab la-facebook-f"></i></a></li>
-                <li><a href="#"><i class="lab la-twitter"></i></a></li>
-                <li><a href="#"><i class="lab la-instagram"></i></a></li>
-                <li><a href="#"><i class="lab la-linkedin-in"></i></a></li>
-              </ul>
-            </div>
+            <ul class="list-inline">
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
         </div>
       </div>
-      </div>
+    </div>
   </div>
   <div id="header-wrap">
     <div class="container">
@@ -102,11 +103,7 @@
               <img class="img-fluid" src="images/logo.png" alt="Billhitler Logo">
             </a>
             <button class="navbar-toggler ht-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <svg width="100" height="100" viewbox="0 0 100 100">
-                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
-                <path class="line line2" d="M 20,50 H 80"></path>
-                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path>
-              </svg>
+              <i class="fa-solid fa-bars" style="font-size: 30px;"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav mx-auto">
@@ -119,15 +116,16 @@
                 <li class="nav-item">
                   <a class="nav-link" href="services.html">Services</a>
                 </li>
-                
                 <li class="nav-item">
                   <a class="nav-link" href="contact-us.html">Contact</a>
                 </li>
               </ul>
             </div>
             <div class="right-nav align-items-center d-flex justify-content-end">
-            
-              <a class="primary-btn" href="contact-us.html"><span>Get A Quote</span></a>
+              <div class="search-icon"> 
+                <a id="search" href="javascript:void(0)"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </div>
+              <a class="primary-btn ms-4" href="contact-us.html"><span>Get A Quote</span></a>
             </div>
           </nav>
         </div>
@@ -135,25 +133,7 @@
     </div>
   </div>
 </header>
-<div class="search-input" id="search-input-box">
-    <div class="search-inner-box">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <form role="search" id="search-form" class="search-form d-flex justify-content-between search-inner">
-                        <label>
-                            <input type="search" class="search-field" placeholder="Search Here" value="" name="s">
-                        </label>
-                        <button type="submit" class="search-submit">
-                            <i class="las la-search"></i>
-                        </button>
-                        <span class="las la-times close-search" id="close-search" title="Close Search"></span>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 <!--header end-->
 
@@ -168,36 +148,37 @@
         <div class="container">
           <div class="row">
             <div class="col-xxl-7 col-xl-8 col-lg-10 col-12">
-              <h1 class="mb-4">Special Production <span>Industrial</span> For Business</h1>
-              <p>Pentair have facility to produce adipisicing elit Excepturi vero aliquam id, Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+              <h1 class="mb-4">Premium <span>Electrical</span> Engineering Services</h1>
+              <p>Specializing in the import, export, and supply of high-grade electrical equipment. Billhitler provides reliable technical solutions for industrial and commercial projects across Nigeria.</p>
               <div class="btn-box mt-5">
-                <a class="primary-btn" href="about-us-1.html">
-                  <span>Explore More About</span>
+                <a class="primary-btn" href="about-us.html">
+                  <span>Explore Our Services</span>
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="banner-large-text"><h1>Industrial</h1></div>
+        <div class="banner-large-text"><h1>Electrical</h1></div>
       </div>
     </div>
+    
     <div class="item">
       <div class="slider-img" data-bg-img="images/bg/02.jpg"></div>
       <div class="banner-content">
         <div class="container">
           <div class="row">
             <div class="col-xxl-7 col-xl-8 col-lg-10 col-12">
-              <h1 class="mb-4">We're Manufacture <span>Factory</span> For Industrial</h1>
-              <p>Pentair have facility to produce adipisicing elit Excepturi vero aliquam id, Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+              <h1 class="mb-4">Expert <span>Welding</span> & Metal Fabrication</h1>
+              <p>From custom fabrication to general contracts, we deliver precision engineering and supply services located in the heart of Warri, Delta State.</p>
               <div class="btn-box mt-5">
-                <a class="primary-btn" href="about-us-1.html">
-                  <span>Explore More About</span>
+                <a class="primary-btn" href="contact-us.html">
+                  <span>Get A Quote Today</span>
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="banner-large-text"><h1>Factory</h1></div>
+        <div class="banner-large-text"><h1>Fabrication</h1></div>
       </div>
     </div>
   </div>
@@ -217,81 +198,61 @@
     <div class="row align-items-center">
       <div class="col-12 col-lg-6 position-relative">
         <div class="text-end mb-n10">
-          <div class="round-text">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 180 180" enable-background="new 0 0 180 180" xml:space="preserve">
-              <defs>
-                <path id="circlePath" d="M 90, 90 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
-              </defs>
-              <circle cx="90" cy="90" r="75" fill="none"></circle>
-              <g>
-                <use xlink:href="#circlePath" fill="none"></use>
-                <text>
-                  <textpath xlink:href="#circlePath">Watch Over Video • Watch Over Video •</textpath>
-                </text>
-              </g>
-            </svg>
-            <a class="video-popup text-btn-icon popup-youtube" href="https://www.youtube.com/watch?v=jjp9SPyEB7k">
-              <i class="las la-play"></i>
-            </a>
-          </div>
         </div>
         <div class="row">
           <div class="col-md-8 mx-auto">
-            <img class="img-fluid" src="images/about/01.jpg" alt="">
+            <img class="img-fluid" src="images/about/about-01.jpg" alt="Electrical Equipment">
           </div>
         </div>
         <div class="row">
           <div class="col-md-8 ms-auto">
-            <img class="img-fluid border border-10 border-white mt-n10" src="images/about/02.jpg" alt="">
+            <img class="img-fluid border border-10 border-white mt-n10" src="images/about/about.jpg" alt="Welding and Fabrication">
           </div>
         </div>
         <div class="text-large-style">
-          <h3>Since 1985</h3>
+          <h3>Est. Service</h3>
         </div>
       </div>
       <div class="col-12 col-lg-6 ps-lg-10 mt-5 mt-lg-0">
         <div class="theme-title mb-4">
           <h6>About Company</h6>
-          <h2>The Modern & Largest Industrial Company</h2>
-          <p>Pentair have facility to produce adipisicing elit. Excepturi vero aliquam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi vero minima impedit aliquam systems.</p>
+          <h2>Your Trusted Partner in Engineering & Supply</h2>
+          <p>Billhitler is a premier industrial firm based in Warri, Delta State. We specialize in the import, export, and supply of top-tier electrical equipment, alongside professional welding, fabrication, and general electrical engineering services.</p>
         </div>
         <div class="featured-item style-1 mt-5">
           <div class="featured-icon">
-            <i class="flaticon-worker"></i>
-          </div>
+            <i class="fa-solid fa-user-gear"></i> </div>
           <div class="featured-desc">
             <div class="featured-title">
-              <h5>Expert Engineers</h5>
+              <h5>Expert Technical Team</h5>
             </div>
-            <p>Modern society consumes, consectetur adipisicing elit. Id quae quos cum consequuntur maiores.</p>
+            <p>Our team consists of highly skilled professionals dedicated to precision in welding, fabrication, and complex electrical engineering projects.</p>
           </div>
         </div>
         <div class="featured-item style-1 mt-4">
           <div class="featured-icon">
-            <i class="flaticon-trophy"></i>
-          </div>
+            <i class="fa-solid fa-award"></i> </div>
           <div class="featured-desc">
             <div class="featured-title">
-              <h5>Certified Engineers</h5>
+              <h5>Quality Guaranteed</h5>
             </div>
-            <p>Modern society consumes, consectetur adipisicing elit. Id quae quos cum consequuntur maiores.</p>
+            <p>We supply only certified electrical equipment and materials, ensuring that every contract we handle meets international safety and durability standards.</p>
           </div>
         </div>
         <div class="row align-items-center mt-6">
           <div class="col-sm-4">
-            <a href="about-us-2.html" class="primary-btn">
-              <span>About More</span>
+            <a href="about-us.html" class="primary-btn">
+              <span>Learn More</span>
             </a>
           </div>
           <div class="col-sm-8 mt-4 mt-sm-0">
             <div class="call-action-box d-flex align-items-center">
               <div class="flex-shrink-0 call-icon">
-                <i class="flaticon-phone-call"></i>
-              </div>
+                <i class="fa-solid fa-headset"></i> </div>
               <div class="flex-grow-1 ms-3">
-                <span class="d-block text-black">Need Any Question</span>
+                <span class="d-block text-black">Have Any Questions?</span>
                 <h6 class="mb-0">
-                  <a href="tel:+91-234-567-8900">+91-234-567-8900</a>
+                  <a href="tel:+2349050975253">+234 905 097 5253</a>
                 </h6>
               </div>
             </div>
@@ -316,27 +277,29 @@
             <div class="col-lg-10 col-md-12">
               <div class="theme-title">
                 <h6>Our Services</h6>
-                <h2>Provide Awesome Services For Industrial Company</h2>
+                <h2>Expert Industrial Solutions for Your Business</h2>
               </div>
             </div>
           </div>
           <div class="owl-carousel arrow-bottom" data-dots="false" data-nav="true" data-items="3" data-xxl-items="3" data-xl-items="2" data-lg-items="2" data-md-items="2" data-sm-items="1" data-margin="30" data-autoplay="true">
+            
             <div class="item">
               <div class="service-item style-1">
                 <div class="service-image">
-                  <img class="img-fluid" src="images/services/01.jpg" alt="">
+                  <img class="img-fluid" src="images/services/elect-equipment.jpg" alt="Electrical Equipment Supply">
                 </div>
                 <div class="service-icon">
-                  <i class="flaticon-industrial-robot"></i>
+                  <i class="fa-solid fa-plug-circle-bolt"></i>
                 </div>
                 <div class="service-desc">
                   <div class="service-title">
                     <h5>
-                      <a href="chemical-research.html">Chemical Research</a>
+                      <a href="services.html">Electrical Equipment Supply</a>
                     </h5>
                   </div>
-                  <a href="chemical-research.html" class="round-text link-round-text">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 180 180" enable-background="new 0 0 180 180" xml:space="preserve">
+                  <p>Import, export, and sales of high-quality industrial electrical components.</p>
+                  <a href="services.html" class="round-text link-round-text">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 180 180">
                       <defs>
                         <path id="circlePath" d="M 90, 90 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
                       </defs>
@@ -344,160 +307,131 @@
                       <g>
                         <use xlink:href="#circlePath" fill="none"></use>
                         <text>
-                          <textpath xlink:href="#circlePath">Read More • Read More •</textpath>
+                          <textPath xlink:href="#circlePath">Read More • Read More •</textPath>
                         </text>
                       </g>
                     </svg>
                     <div class="text-btn-icon">
-                      <i class="las la-chevron-right"></i>
+                      <i class="fa-solid fa-chevron-right"></i>
                     </div>
                   </a>
                 </div>
               </div>
             </div>
+
             <div class="item">
               <div class="service-item style-1">
                 <div class="service-image">
-                  <img class="img-fluid" src="images/services/02.jpg" alt="">
+                  <img class="img-fluid" src="images/services/welding.jpg" alt="Welding and Fabrication">
                 </div>
                 <div class="service-icon">
-                  <i class="flaticon-maintenance"></i>
+                  <i class="fa-solid fa-faucet-drip"></i> </div>
+                <div class="service-desc">
+                  <div class="service-title">
+                    <h5>
+                      <a href="services.html">Welding & Fabrication</a>
+                    </h5>
+                  </div>
+                  <p>Precision welding and structural fabrication for industrial requirements.</p>
+                  <a href="services.html" class="round-text link-round-text">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 180 180">
+                      <defs>
+                        <path id="circlePath2" d="M 90, 90 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
+                      </defs>
+                      <circle cx="90" cy="90" r="75" fill="none"></circle>
+                      <g>
+                        <use xlink:href="#circlePath2" fill="none"></use>
+                        <text>
+                          <textPath xlink:href="#circlePath2">Read More • Read More •</textPath>
+                        </text>
+                      </g>
+                    </svg>
+                    <div class="text-btn-icon">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="service-item style-1">
+                <div class="service-image">
+                  <img class="img-fluid" src="images/services/engineering.jpg" alt="Electrical Engineering Services">
+                </div>
+                <div class="service-icon">
+                  <i class="fa-solid fa-bolt-lightning"></i>
                 </div>
                 <div class="service-desc">
                   <div class="service-title">
                     <h5>
-                      <a href="energy-power-engineering.html">Energy & Power Engineering</a>
+                      <a href="services.html">Engineering Services</a>
                     </h5>
                   </div>
-                  <a href="energy-power-engineering.html" class="round-text link-round-text">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 180 180" enable-background="new 0 0 180 180" xml:space="preserve">
+                  <p>Full-scale electrical engineering services and technical consultation.</p>
+                  <a href="services.html" class="round-text link-round-text">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 180 180">
                       <defs>
-                        <path id="circlePath" d="M 90, 90 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
+                        <path id="circlePath3" d="M 90, 90 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
                       </defs>
                       <circle cx="90" cy="90" r="75" fill="none"></circle>
                       <g>
-                        <use xlink:href="#circlePath" fill="none"></use>
+                        <use xlink:href="#circlePath3" fill="none"></use>
                         <text>
-                          <textpath xlink:href="#circlePath">Read More • Read More •</textpath>
+                          <textPath xlink:href="#circlePath3">Read More • Read More •</textPath>
                         </text>
                       </g>
                     </svg>
                     <div class="text-btn-icon">
-                      <i class="las la-chevron-right"></i>
+                      <i class="fa-solid fa-chevron-right"></i>
                     </div>
                   </a>
                 </div>
               </div>
             </div>
+
             <div class="item">
               <div class="service-item style-1">
                 <div class="service-image">
-                  <img class="img-fluid" src="images/services/03.jpg" alt="">
+                  <img class="img-fluid" src="images/services/contracts.jpg" alt="General Contracts">
                 </div>
                 <div class="service-icon">
-                  <i class="flaticon-fuel-station"></i>
+                  <i class="fa-solid fa-file-contract"></i>
                 </div>
                 <div class="service-desc">
                   <div class="service-title">
                     <h5>
-                      <a href="petroleum-and-gas.html">Petroleum and Gas</a>
+                      <a href="services.html">General Contracts</a>
                     </h5>
                   </div>
-                  <a href="petroleum-and-gas.html" class="round-text link-round-text">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 180 180" enable-background="new 0 0 180 180" xml:space="preserve">
+                  <p>Reliable supply and execution of general industrial and technical contracts.</p>
+                  <a href="services.html" class="round-text link-round-text">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 180 180">
                       <defs>
-                        <path id="circlePath" d="M 90, 90 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
+                        <path id="circlePath4" d="M 90, 90 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
                       </defs>
                       <circle cx="90" cy="90" r="75" fill="none"></circle>
                       <g>
-                        <use xlink:href="#circlePath" fill="none"></use>
+                        <use xlink:href="#circlePath4" fill="none"></use>
                         <text>
-                          <textpath xlink:href="#circlePath">Read More • Read More •</textpath>
+                          <textPath xlink:href="#circlePath4">Read More • Read More •</textPath>
                         </text>
                       </g>
                     </svg>
                     <div class="text-btn-icon">
-                      <i class="las la-chevron-right"></i>
+                      <i class="fa-solid fa-chevron-right"></i>
                     </div>
                   </a>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="service-item style-1">
-                <div class="service-image">
-                  <img class="img-fluid" src="images/services/04.jpg" alt="">
-                </div>
-                <div class="service-icon">
-                  <i class="flaticon-growth"></i>
-                </div>
-                <div class="service-desc">
-                  <div class="service-title">
-                    <h5>
-                      <a href="agriculture-engineering.html">Agriculture Engineering</a>
-                    </h5>
-                  </div>
-                  <a href="agriculture-engineering.html" class="round-text link-round-text">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 180 180" enable-background="new 0 0 180 180" xml:space="preserve">
-                      <defs>
-                        <path id="circlePath" d="M 90, 90 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
-                      </defs>
-                      <circle cx="90" cy="90" r="75" fill="none"></circle>
-                      <g>
-                        <use xlink:href="#circlePath" fill="none"></use>
-                        <text>
-                          <textpath xlink:href="#circlePath">Read More • Read More •</textpath>
-                        </text>
-                      </g>
-                    </svg>
-                    <div class="text-btn-icon">
-                      <i class="las la-chevron-right"></i>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item style-1">
-                <div class="service-image">
-                  <img class="img-fluid" src="images/services/05.jpg" alt="">
-                </div>
-                <div class="service-icon">
-                  <i class="flaticon-settings"></i>
-                </div>
-                <div class="service-desc">
-                  <div class="service-title">
-                    <h5>
-                      <a href="mechanical-engineering.html">Mechanical Engineering</a>
-                    </h5>
-                  </div>
-                  <a href="mechanical-engineering.html" class="round-text link-round-text">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 180 180" enable-background="new 0 0 180 180" xml:space="preserve">
-                      <defs>
-                        <path id="circlePath" d="M 90, 90 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
-                      </defs>
-                      <circle cx="90" cy="90" r="75" fill="none"></circle>
-                      <g>
-                        <use xlink:href="#circlePath" fill="none"></use>
-                        <text>
-                          <textpath xlink:href="#circlePath">Read More • Read More •</textpath>
-                        </text>
-                      </g>
-                    </svg>
-                    <div class="text-btn-icon">
-                      <i class="las la-chevron-right"></i>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 <!--services end-->
 
 
@@ -507,53 +441,49 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <div class="white-bg p-6">
+        <div class="white-bg p-6 shadow-sm">
           <div class="row">
             <div class="col-12 col-lg-3 col-md-6">
-              <div class="counter">
-                <div class="counter-icon">
-                  <i class="flaticon-project"></i>
+              <div class="counter d-flex align-items-center">
+                <div class="counter-icon me-3">
+                  <i class="fa-solid fa-shield-check" style="font-size: 40px; color: #ff5e14;"></i>
                 </div>
                 <div class="counter-desc">
-                  <span class="count-number" data-count="423">423</span>
-                  <span>+</span>
-                  <h6>Success Project</h6>
+                  <h6 class="mb-0">Reliable</h6>
+                  <small>Engineering</small>
                 </div>
               </div>
             </div>
             <div class="col-12 col-lg-3 col-md-6 mt-5 mt-md-0">
-              <div class="counter">
-                <div class="counter-icon">
-                  <i class="flaticon-online-support"></i>
+              <div class="counter d-flex align-items-center">
+                <div class="counter-icon me-3">
+                  <i class="fa-solid fa-phone-volume" style="font-size: 40px; color: #ff5e14;"></i>
                 </div>
                 <div class="counter-desc">
-                  <span class="count-number" data-count="240">240</span>
-                  <span>+</span>
-                  <h6>Worker Team</h6>
+                  <h6 class="mb-0">Expert</h6>
+                  <small>Consultation</small>
                 </div>
               </div>
             </div>
             <div class="col-12 col-lg-3 col-md-6 mt-5 mt-lg-0">
-              <div class="counter">
-                <div class="counter-icon">
-                  <i class="flaticon-trophy"></i>
+              <div class="counter d-flex align-items-center">
+                <div class="counter-icon me-3">
+                  <i class="fa-solid fa-certificate" style="font-size: 40px; color: #ff5e14;"></i>
                 </div>
                 <div class="counter-desc">
-                  <span class="count-number" data-count="365">365</span>
-                  <span>+</span>
-                  <h6>Winning Award</h6>
+                  <h6 class="mb-0">Certified</h6>
+                  <small>Equipment</small>
                 </div>
               </div>
             </div>
             <div class="col-12 col-lg-3 col-md-6 mt-5 mt-lg-0">
-              <div class="counter">
-                <div class="counter-icon">
-                  <i class="flaticon-employee"></i>
+              <div class="counter d-flex align-items-center">
+                <div class="counter-icon me-3">
+                  <i class="fa-solid fa-truck-ramp-box" style="font-size: 40px; color: #ff5e14;"></i>
                 </div>
                 <div class="counter-desc">
-                  <span class="count-number" data-count="2500">2500</span>
-                  <span>+</span>
-                  <h6>Happy Customer</h6>
+                  <h6 class="mb-0">Fast</h6>
+                  <small>Global Supply</small>
                 </div>
               </div>
             </div>
@@ -574,8 +504,8 @@
     <div class="row justify-content-center text-center">
       <div class="col-lg-6 col-md-12">
         <div class="theme-title">
-          <h6>Our Projects</h6>
-          <h2>Let's Checkout Our Recently Completed Work</h2>
+          <h6>Areas of Expertise</h6>
+          <h2>Specialized Industrial & Electrical Solutions</h2>
         </div>
       </div>
     </div>
@@ -584,132 +514,105 @@
     <div class="row">
       <div class="col">
         <div class="owl-carousel no-pb" data-dots="false" data-items="4" data-xxl-items="3" data-xl-items="2" data-lg-items="2" data-md-items="2" data-sm-items="1" data-autoplay="true">
+          
           <div class="item">
             <div class="project-item style-1">
               <div class="project-title">
-                <div class="project-cat"> Chemical</div>
+                <div class="project-cat">Supply</div>
                 <h4>
-                  <a href="project-single.html">Chemical Industry Innovation</a>
+                  <a href="services.html">Electrical Equipment Procurement</a>
                 </h4>
               </div>
-              <a href="project-single.html" class="round-text link-round-text">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 180 180" enable-background="new 0 0 180 180" xml:space="preserve">
+              <a href="services.html" class="round-text link-round-text">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 180 180">
                   <defs>
-                    <path id="circlePath" d="M 90, 90 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
+                    <path id="circlePath1" d="M 90, 90 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
                   </defs>
                   <circle cx="90" cy="90" r="75" fill="none"></circle>
                   <g>
-                    <use xlink:href="#circlePath" fill="none"></use>
+                    <use xlink:href="#circlePath1" fill="none"></use>
                     <text>
-                      <textpath xlink:href="#circlePath">Read More • Read More •</textpath>
+                      <textPath xlink:href="#circlePath1">View Details • View Details •</textPath>
                     </text>
                   </g>
                 </svg>
                 <div class="text-btn-icon">
-                  <i class="las la-chevron-right"></i>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
               <div class="project-img">
-                <img class="img-fluid" src="images/project/01.jpg" alt="">
+                <img class="img-fluid" src="images/project/01.jpg" alt="Electrical Supply">
               </div>
             </div>
           </div>
+
           <div class="item">
             <div class="project-item style-1">
               <div class="project-title">
-                <div class="project-cat"> Industry</div>
+                <div class="project-cat">Engineering</div>
                 <h4>
-                  <a href="project-single.html">Technological Solutions For Factories</a>
+                  <a href="services.html">Welding & Metal Fabrication</a>
                 </h4>
               </div>
-              <a href="project-single.html" class="round-text link-round-text">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 180 180" enable-background="new 0 0 180 180" xml:space="preserve">
+              <a href="services.html" class="round-text link-round-text">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 180 180">
                   <defs>
-                    <path id="circlePath" d="M 90, 90 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
+                    <path id="circlePath2" d="M 90, 90 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
                   </defs>
                   <circle cx="90" cy="90" r="75" fill="none"></circle>
                   <g>
-                    <use xlink:href="#circlePath" fill="none"></use>
+                    <use xlink:href="#circlePath2" fill="none"></use>
                     <text>
-                      <textpath xlink:href="#circlePath">Read More • Read More •</textpath>
+                      <textPath xlink:href="#circlePath2">View Details • View Details •</textPath>
                     </text>
                   </g>
                 </svg>
                 <div class="text-btn-icon">
-                  <i class="las la-chevron-right"></i>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
               <div class="project-img">
-                <img class="img-fluid" src="images/project/02.jpg" alt="">
+                <img class="img-fluid" src="images/project/02.jpg" alt="Fabrication Work">
               </div>
             </div>
           </div>
+
           <div class="item">
             <div class="project-item style-1">
               <div class="project-title">
-                <div class="project-cat"> Company</div>
+                <div class="project-cat">Technical</div>
                 <h4>
-                  <a href="project-single.html">Innovative Industry Project Work</a>
+                  <a href="services.html">Electrical Engineering Services</a>
                 </h4>
               </div>
-              <a href="project-single.html" class="round-text link-round-text">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 180 180" enable-background="new 0 0 180 180" xml:space="preserve">
+              <a href="services.html" class="round-text link-round-text">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 180 180">
                   <defs>
-                    <path id="circlePath" d="M 90, 90 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
+                    <path id="circlePath3" d="M 90, 90 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
                   </defs>
                   <circle cx="90" cy="90" r="75" fill="none"></circle>
                   <g>
-                    <use xlink:href="#circlePath" fill="none"></use>
+                    <use xlink:href="#circlePath3" fill="none"></use>
                     <text>
-                      <textpath xlink:href="#circlePath">Read More • Read More •</textpath>
+                      <textPath xlink:href="#circlePath3">View Details • View Details •</textPath>
                     </text>
                   </g>
                 </svg>
                 <div class="text-btn-icon">
-                  <i class="las la-chevron-right"></i>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </a>
               <div class="project-img">
-                <img class="img-fluid" src="images/project/03.jpg" alt="">
+                <img class="img-fluid" src="images/project/03.jpg" alt="Engineering Services">
               </div>
             </div>
           </div>
-          <div class="item">
-            <div class="project-item style-1">
-              <div class="project-title">
-                <div class="project-cat"> Factory</div>
-                <h4>
-                  <a href="project-single.html">Manufacture Petroleum Camber</a>
-                </h4>
-              </div>
-              <a href="project-single.html" class="round-text link-round-text">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewbox="0 0 180 180" enable-background="new 0 0 180 180" xml:space="preserve">
-                  <defs>
-                    <path id="circlePath" d="M 90, 90 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
-                  </defs>
-                  <circle cx="90" cy="90" r="75" fill="none"></circle>
-                  <g>
-                    <use xlink:href="#circlePath" fill="none"></use>
-                    <text>
-                      <textpath xlink:href="#circlePath">Read More • Read More •</textpath>
-                    </text>
-                  </g>
-                </svg>
-                <div class="text-btn-icon">
-                  <i class="las la-chevron-right"></i>
-                </div>
-              </a>
-              <div class="project-img">
-                <img class="img-fluid" src="images/project/04.jpg" alt="">
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
   </div>
 </section>
-
 <!--project end-->
 
 
@@ -794,256 +697,10 @@
 <!--about end-->
 
 
-<!--team start-->
-
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <div class="team-member">
-          <h5>
-            <a href="team-single.html">James Finch</a>
-          </h5>
-          <div class="team-images">
-            <img class="img-fluid" src="images/team/01.jpg" alt="Image">
-          </div>
-          <ul class="team-social-icon list-inline">
-            <li>
-              <a href="#">
-                <i class="lab la-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="lab la-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="lab la-pinterest-p"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="lab la-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
-        <div class="team-member">
-          <h5>
-            <a href="team-single.html">Leena Mac</a>
-          </h5>
-          <div class="team-images">
-            <img class="img-fluid" src="images/team/02.jpg" alt="Image">
-          </div>
-          <ul class="team-social-icon list-inline">
-            <li>
-              <a href="#">
-                <i class="lab la-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="lab la-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="lab la-pinterest-p"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="lab la-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
-        <div class="team-member">
-          <h5>
-            <a href="team-single.html">Kendra Pual</a>
-          </h5>
-          <div class="team-images">
-            <img class="img-fluid" src="images/team/03.jpg" alt="Image">
-          </div>
-          <ul class="team-social-icon list-inline">
-            <li>
-              <a href="#">
-                <i class="lab la-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="lab la-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="lab la-pinterest-p"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="lab la-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--team end-->
 
 
-<!--testimonial start-->
-
-<section class="py-0 dark-bg">
-  <div class="container">
-    <div class="row">
-      <div class="col position-relative">
-        <div class="testimonial-heading">
-          <h2>What Client Say ?</h2>
-        </div>
-        <div class="owl-carousel no-pb" data-dots="false" data-nav="true" data-items="1" data-autoplay="true">
-          <div class="item">
-            <div class="testimonial style-1">
-              <div class="testimonial-img">
-                <img class="img-fluid" src="images/testimonial/01.jpg" alt="Image">
-              </div>
-              <div class="testimonial-content">
-                <p>Pentair Provide Greate Services for elit. Excepturi vero aliquam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tellus lorem ipsum dolore amet. Sit a scelerisque purus semper. Ac turpis egestas sed tempus urna et pharetra. Et tortor consequat id porta nibh turpis egestas.</p>
-                <div class="testimonial-caption">
-                  <h4>Armani Rain</h4>
-                  <span>Engineer</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="testimonial style-1">
-              <div class="testimonial-img">
-                <img class="img-fluid" src="images/testimonial/02.jpg" alt="Image">
-              </div>
-              <div class="testimonial-content">
-                <p>Pentair Provide Greate Services for elit. Excepturi vero aliquam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tellus lorem ipsum dolore amet. Sit a scelerisque purus semper. Ac turpis egestas sed tempus urna et pharetra. Et tortor consequat id porta nibh turpis egestas.</p>
-                <div class="testimonial-caption">
-                  <h4>Scott Wild</h4>
-                  <span>Engineer</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--testimonial end-->
 
 
-<!--blog end-->
-
-<section>
-  <div class="container">
-    <div class="row align-items-center border-bottom border-dark mb-7 pb-2">
-      <div class="col-lg-6">
-        <div class="theme-title">
-          <h6>Blog Post</h6>
-          <h2>Articles And News From Industry</h2>
-        </div>
-      </div>
-      <div class="col-lg-6 text-end">
-        <a href="blog-grid-3.html" class="primary-btn">
-          <span>Explore More</span>
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <div class="post-card">
-          <div class="post-desc">
-            <ul class="list-inline post-bottom mb-0">
-              <li class="list-inline-item">
-                <span> February 24, 2023 </span>
-              </li>
-              <li class="list-inline-item">
-                <span class="cat-links">
-                  <a href="#" rel="category tag">Mechanical</a>
-                </span>
-              </li>
-            </ul>
-            <div class="post-title">
-              <h4>
-                <a href="blog-single.html">Interactive technologies in factories and plants</a>
-              </h4>
-            </div>
-          </div>
-          <div class="post-image">
-            <img class="img-fluid" src="images/blog/01.jpg" alt="Image">
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
-        <div class="post-card">
-          <div class="post-desc">
-            <ul class="list-inline post-bottom mb-0">
-              <li class="list-inline-item">
-                <span> February 24, 2023 </span>
-              </li>
-              <li class="list-inline-item">
-                <span class="cat-links">
-                  <a href="#" rel="category tag">Mechanical</a>
-                </span>
-              </li>
-            </ul>
-            <div class="post-title">
-              <h4>
-                <a href="blog-single.html">What is Construction Planning The steps for success</a>
-              </h4>
-            </div>
-          </div>
-          <div class="post-image">
-            <img class="img-fluid" src="images/blog/02.jpg" alt="Image">
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
-        <div class="post-card">
-          <div class="post-desc">
-            <ul class="list-inline post-bottom mb-0">
-              <li class="list-inline-item">
-                <span> February 24, 2023 </span>
-              </li>
-              <li class="list-inline-item">
-                <span class="cat-links">
-                  <a href="#" rel="category tag">Mechanical</a>
-                </span>
-              </li>
-            </ul>
-            <div class="post-title">
-              <h4>
-                <a href="blog-single.html">Creation of industrial projects around the world</a>
-              </h4>
-            </div>
-          </div>
-          <div class="post-image">
-            <img class="img-fluid" src="images/blog/03.jpg" alt="Image">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--blog end-->
 
 
 <!--contact start-->
